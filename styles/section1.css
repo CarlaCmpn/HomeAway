@@ -1,0 +1,743 @@
+/** 
+*
+*
+* SECTION 1
+*
+*
+*/
+
+.bg-section1 {
+    width: 100%;
+    height: 100%;
+}
+
+/** 
+* logo
+*/
+
+#section1 .logo {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    top: 2%;
+    left: 1%;
+    border-right: solid #ffffff 3px;
+}
+
+#section1 .logo .logo-HW {
+    max-width: 90%;
+    height: auto;
+
+}
+
+/** 
+* Time / Date
+*/
+
+#section1 .time {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    top: 2%;
+    left: 12%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    /* border: white 1px solid; */
+}
+
+#section1 .date {
+    position: absolute;
+    width: 250px;
+    height: 28px;
+    top: 7%;
+    left: 12%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    /* border: white 1px solid; */
+}
+
+.planets {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 30%;
+}
+
+
+.planets-create {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 50%;
+    top: 40%;
+    left: 8%;
+    z-index: 1;
+}
+
+.sun {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: -20%;
+    z-index: 1;
+}
+
+.sun img {
+    width: auto;
+    height: 100%;
+    background-position: center;
+}
+
+
+.data-hover-1,
+.data-hover-2,
+.data-hover-3,
+.data-hover-4,
+.data-hover-5,
+.data-hover-6,
+.data-hover-7 {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    top: -50%;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 3%;
+    margin-top: -10%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.data_title_hover-1,
+.data_title_hover-2,
+.data_title_hover-3,
+.data_title_hover-4,
+.data_title_hover-5,
+.data_title_hover-6,
+.data_title_hover-7 {
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    top: -61%;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 3%;
+    margin-top: -9.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.data-hover-1 p,
+.data-hover-2 p,
+.data-hover-3 p,
+.data-hover-4 p,
+.data-hover-5 p,
+.data-hover-6 p,
+.data-hover-7 p {
+    padding-left: 5%;
+    padding-top: 2%;
+    color: #ffffff;
+}
+
+.data_title_hover-1 p,
+.data_title_hover-2 p,
+.data_title_hover-3 p,
+.data_title_hover-4 p,
+.data_title_hover-5 p,
+.data_title_hover-6 p,
+.data_title_hover-7 p {
+    padding-left: 5%;
+    background: #ffffff;
+    color: black;
+    font-family: 'Futura', sans-serif
+}
+
+.eliminate {
+    width: 250px;
+    height: 10%;
+    background-image: url(../images/close.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    margin: 35% 0;
+}
+
+/* .planet-1:hover .data-hover-1,
+.planet-2:hover .data-hover-2,
+.planet-3:hover .data-hover-3,
+.planet-4:hover .data-hover-4,
+.planet-5:hover .data-hover-5,
+.planet-6:hover .data-hover-6,
+.planet-7:hover .data-hover-7
+{
+    visibility: visible;
+}
+
+.planet-1:hover .data_title_hover-1,
+.planet-2:hover .data_title_hover-2,
+.planet-3:hover .data_title_hover-3,
+.planet-4:hover .data_title_hover-4,
+.planet-5:hover .data_title_hover-5,
+.planet-6:hover .data_title_hover-6,
+.planet-7:hover .data_title_hover-7
+{
+    visibility: visible;
+}
+ */
+
+
+
+
+.presentation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 5;
+}
+
+.presentation.animation
+{
+    animation: slide 2s forwards;
+    will-change: transform;
+}
+
+@keyframes slide 
+{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(100%);}
+}
+
+.title-presentation 
+{
+    position: absolute;
+    color: #ffffff;
+    top: 30%;
+    left: 7%;
+    width: 55%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+    font-size: 2.2em;
+}
+
+
+
+.presentation  p
+{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 7%;
+    top: 40%;
+    font-family: "Quicksand";
+    font-size: 1.2em;
+    color: white;
+    line-height: 2;
+}
+
+
+h3
+{
+    position: absolute;
+    font-size: 1.6em;
+    color: #ffffff;
+    font-family: 'Futura', sans-serif;
+    top: 10%;
+    left: 30%;
+}
+
+.consigne
+{
+    position: absolute;
+    font-size: 1.6em;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    top: 15%;
+    left: 28%;
+}
+
+.img-presentation {
+    position: absolute;
+    color: #ffffff;
+    top: 25%;
+    left: 55%;
+    width: 40%;
+    height: 60%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+    font-size: 1.2em;
+}
+
+
+
+.button-presentation {
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 14px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 0.7%;
+    padding-left: 2.3%;
+    cursor: pointer;
+}
+
+
+.div-spaceman {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    width: 10%;
+    height: 15%;
+    /* border: 1px solid white; */
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.div-spaceman .div-bubble {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: -60%;
+    bottom: 100%;
+    width: 60%;
+    height: 35%;
+    background: #ffffff;
+    border-radius: 60%;
+}
+
+.div-spaceman .div-bubble-1 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 10%;
+    left: 25%;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.div-spaceman .div-bubble-2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10%;
+    left: 5%;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.lesson .div-bubble-3 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 70%;
+    left: 25%;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.lesson .div-bubble-4 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 78%;
+    left: 20%;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.div-bubble .little-bubble-1 {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 10px;
+    height: 10px;
+    background: #6B44BF;
+    border-radius: 50%;
+    animation: bubble infinite 1s;
+    will-change: transform;
+}
+
+.div-bubble .little-bubble-2 {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    background: #6B44BF;
+    border-radius: 50%;
+    animation: bubble infinite 1s;
+    animation-delay: 0.25s;
+    will-change: transform;
+}
+
+.div-bubble .little-bubble-3 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background: #6B44BF;
+    border-radius: 50%;
+    animation: bubble infinite 1s;
+    animation-delay: 0.5s;will-change: transform;
+
+}
+
+
+
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+.div-spaceman img {
+    width: 150%;
+    height: auto;
+}
+
+
+.lesson {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: black; */
+    /* opacity: 0.8; */
+    z-index: 4;
+}
+
+/* Lesson physics */
+
+.lesson .lesson-physics {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    background: #ffffff;
+    top: 15%;
+    left: 26%;
+    border-radius: 50%;
+}
+
+.title-physics {
+    position: absolute;
+    color: #6B44BF;
+    bottom: 80%;
+    left: 25%;
+    top: 15%;
+    width: 65%;
+    font-family: 'Futura', sans-serif;
+    line-height: 1.8;
+    font-size: 2em;
+}
+
+.text-physics {
+    position: absolute;
+    color: #272727;
+    top: 30%;
+    left: 20%;
+    width: 65%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+    font-size: 1em;
+}
+
+.button-next-physics {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2.5%;
+    cursor: pointer;
+}
+
+.button-next-atmosphere {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2.5%;
+    cursor: pointer;
+}
+
+.button-previous-physics {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.button-previous-atmosphere {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.button-previous-cycle {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.button-next-cycle {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2.5%;
+    cursor: pointer;
+}
+
+.button-next-interne {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 34px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    padding-top: 1%;
+    padding-left: 2.5%;
+    cursor: pointer;
+}
+
+
+.lesson .div-cross {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 65%;
+    top: 26%;
+    cursor: pointer;
+}
+
+.lesson .div-cross .img-cross {
+
+    width: 15%;
+    height: auto;
+}
+
+.div-book {
+    position: absolute;
+    top: 86%;
+    left: 80%;
+    width: 10%;
+    height: 35%;
+    /* border: 1px solid white; */
+    cursor: pointer;
+}
+
+.div-book img 
+{
+    width: 120%;
+    height: auto;
+}
+
+.results 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.results>.content 
+{
+    width: 40%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.results .text 
+{
+    width: 65%;
+    padding: 2%;
+    color: #272727;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+    top: 5%;
+}
+
+.results .button-continue 
+{
+    position: absolute;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 14px;
+    background: radial-gradient(#5227C7, #6B44BF);
+    font-family: 'Futura', sans-serif;
+    top: 65%;
+    color: white;
+    font-size: 14px;
+}
+
+span
+{
+    font-weight: bold;
+    color: #6B44BF;
+}
+
+
+#section .sound
+{
+    position: absolute;
+    width: 250px;
+    height: 28px;
+    top: -87%;
+    left: 12%;
+    border: 1px solid white;
+}
+
+
+ .equalizer
+ {
+     position: absolute;
+     width: 8%;
+     height: 6%;
+     bottom: 85%;
+     left: 85%;
+     cursor: pointer;
+ }
+ 
+ .equalizer .bar
+ {
+     position: absolute;
+     width: 10px;
+     height: 50px;
+     margin-left: 58%;
+     background: #ffffff;
+     animation-name: equalizer-bar-bounce;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-fill-mode: backwards;
+     will-change: transform;
+ }
+ 
+.equalizer .bar-1 { left: -60px; animation-delay: 0.4s; }
+.equalizer .bar-2 { left: -35px; animation-delay: 0.3s; }
+.equalizer .bar-3 { left: -10px; animation-delay: 0.8s; }
+.equalizer .bar-4 { left: 15px; animation-delay: 0.1s; }
+.equalizer .bar-5 { left: 40px; animation-delay: 0.6s; }
+
+.stop-sound .bar-1 { left: -60px; animation-delay: 0.4s; }
+.stop-sound .bar-2 { left: -35px; animation-delay: 0.3s; }
+.stop-sound .bar-3 { left: -10px; animation-delay: 0.8s; }
+.stop-sound .bar-4 { left: 15px; animation-delay: 0.1s; }
+.stop-sound .bar-5 { left: 40px; animation-delay: 0.6s; }
+ 
+ @keyframes equalizer-bar-bounce
+ {
+     0%   { transform: scaleY(0.2); }
+     10%  { transform: scaleY(1); }
+     100% { transform: scaleY(0.2); }
+ }
+
+ @keyframes stop
+ {
+     0%   { transform: scaleY(0.2); }
+     10%  { transform: scaleY(0.2); }
+     100% { transform: scaleY(0.2); }
+ }
+ 
+ .stop-sound
+ {
+    position: absolute;
+    width: 8%;
+    height: 6%;
+    bottom: 85%;
+    left: 85%;
+    cursor: pointer;
+    animation: 1s stop normal forwards;
+    will-change: transform;
+}
+     
+.stop-sound .bar
+{
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    margin-left: 58%;
+    background: #ffffff;
+}
+
